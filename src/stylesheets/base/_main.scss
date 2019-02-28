@@ -23,7 +23,6 @@ html{
 	}
     }
 }
-
 /*Forms*/
 label{
     font-size: 14px;
@@ -62,6 +61,12 @@ label{
     .custom-control-label::before{
 	background: linear-gradient(#e4eaed, #f4f7f8);
 	box-shadow: 0 0 0 1px #dfe7ea;
+	color: $green;
+	border-color: #fff;
+	background-color: #fff;
+    }
+    .custom-control-input:checked ~ .custom-control-label::before{
+	border-color: #fff;
     }
 }
 .btn-primary {
@@ -148,7 +153,11 @@ ul.languages{
 	}
     }
 }
-
+@include media-breakpoint-up(md) {
+    .text-right-md{
+	text-align: right;
+    }
+}
 .site-header{
     border-bottom: 1px solid #b4b4b4;
     .navbar-collapse{
@@ -274,7 +283,6 @@ ul.languages{
 
 .card h3{
     color: $blue;
-    font-size: rem(24px);
 }
 .custom-control-label{
     font-size: rem(16px);

@@ -53,8 +53,8 @@ $font-family-secondary:  'Lato', sans-serif;
 $h1-font-size:  rem(30px);
 $h2-font-size:  rem(26px);
 $h3-font-size:  rem(24px);
-$h3-font-size:  rem(22px);
-$h3-font-size:  rem(20px);
+$h4-font-size:  rem(22px);
+$h5-font-size:  rem(20px);
 
 $headings-font-weight:  700;
 
@@ -96,9 +96,9 @@ $custom-select-indicator: url("data:image/svg+xml,%3Csvg enable-background='new 
 
 
 $custom-control-indicator-bg: #fff;
-$custom-control-indicator-border-color: #fff;
+$custom-control-indicator-border-color: $blue;
 
-$custom-control-indicator-checked-border-color: #fff;
+$custom-control-indicator-checked-border-color: $blue;
 $custom-control-indicator-checked-color: $green;
 $custom-control-indicator-checked-bg: #fff;
 
