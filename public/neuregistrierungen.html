@@ -552,6 +552,25 @@
 	    <button type="button" class="btn btn-outline-secondary btn-lg">Datensätze überprüfen</button>
 	    <a href="neuregistrierungen.html" class="btn btn-primary btn-lg">Abbrechen</a>
 	</p>
+	<hr class="my-4">
+	<p class="btns-center mt-5">
+	    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">Primary Popup</button>
+	</p>
+	<div class="modal modal-primary fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="primaryModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		    <div class="modal-header icon-achtung">
+			<h5 class="modal-title">Achtung!</h5>
+		    </div>
+		    <div class="modal-body text-center">
+			<p>Bitte bestätigen Sie die Übernahme<br>
+			    des Datensatzes in die Datenbank.</p>
+			<button type="button" class="btn btn-sm btn-primary" data-dismiss="modal" aria-label="Close">Ja</button>
+			<button type="button" class="btn btn-sm btn-outline-primary" data-dismiss="modal" aria-label="Close">Nen</button>
+		    </div>
+		</div>
+	    </div>
+	</div>
     </div>
 </div>
 <div class="site-footer">
