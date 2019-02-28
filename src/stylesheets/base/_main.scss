@@ -51,6 +51,15 @@ label{
 	}
     }
 }
+.custom-checkbox{
+    .custom-control-label:hover{
+	cursor: pointer;
+    }
+    .custom-control-label::before{
+	background: linear-gradient(#e4eaed, #f4f7f8);
+	box-shadow: 0 0 0 1px #dfe7ea;
+    }
+}
 .btn-primary {
     color: #fff;
     @include hover-focus{
