@@ -1,0 +1,505 @@
+{#
+Nunjucks Templating!
+Homepage: https://mozilla.github.io/nunjucks/
+Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+{% include "layouts/header.html" %}
+<div class="main-content">
+    <div class="container">
+	<div class="reg-heading">
+	    <i class="i-registrierungen"></i>
+	    <h1>Registrierungen</h1>
+	</div>
+	<div class="form-group mb-4">
+	    <div class="btn-group-toggle" data-toggle="buttons">
+		<label class="btn btn-light">
+		    <input type="checkbox"> Alle Datensätze (20)
+		</label>
+		<label class="btn btn-light active">
+		    <input type="checkbox" checked> Übereinstimmende und neue Datensätze (15)
+		</label>
+		<label class="btn btn-light">
+		    <input type="checkbox"> Abweichende Datensätze (5)
+		</label>
+	    </div>
+	</div>
+	<table id="DataTable" class="table table-striped table-hover">
+	    <thead>
+		<tr>
+		    <th scope="col">Ausw.</th>
+		    <th scope="col">Reg. Datum</th>
+		    <th scope="col">Anr.</th>
+		    <th scope="col">Vorname</th>
+		    <th scope="col">Nachname</th>
+		    <th scope="col">E-Mail</th>
+		    <th scope="col">Plz.</th>
+		    <th scope="col">Schulform</th>
+		    <th scope="col">Schule / Unternehnen</th>
+		</tr>
+	    </thead>
+	    <tbody>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+			    <label class="custom-control-label" for="customCheck1">1</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck2">
+			    <label class="custom-control-label" for="customCheck2">2</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
+			    <label class="custom-control-label" for="customCheck3">3</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck4">
+			    <label class="custom-control-label" for="customCheck4">4</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck5" checked>
+			    <label class="custom-control-label" for="customCheck5">5</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck6">
+			    <label class="custom-control-label" for="customCheck6">6</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck7">
+			    <label class="custom-control-label" for="customCheck7">7</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck8" checked>
+			    <label class="custom-control-label" for="customCheck8">8</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck9">
+			    <label class="custom-control-label" for="customCheck9">9</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck10" checked>
+			    <label class="custom-control-label" for="customCheck10">10</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck11">
+			    <label class="custom-control-label" for="customCheck11">11</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck12">
+			    <label class="custom-control-label" for="customCheck12">12</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck13" checked>
+			    <label class="custom-control-label" for="customCheck13">13</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck14">
+			    <label class="custom-control-label" for="customCheck14">14</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck15">
+			    <label class="custom-control-label" for="customCheck15">15</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck16">
+			    <label class="custom-control-label" for="customCheck16">16</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck17">
+			    <label class="custom-control-label" for="customCheck17">17</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck18">
+			    <label class="custom-control-label" for="customCheck18">18</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck19">
+			    <label class="custom-control-label" for="customCheck19">19</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck20">
+			    <label class="custom-control-label" for="customCheck20">20</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck21">
+			    <label class="custom-control-label" for="customCheck21">21</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck22">
+			    <label class="custom-control-label" for="customCheck22">22</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck23">
+			    <label class="custom-control-label" for="customCheck23">23</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck24">
+			    <label class="custom-control-label" for="customCheck24">24</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck25">
+			    <label class="custom-control-label" for="customCheck25">25</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck26">
+			    <label class="custom-control-label" for="customCheck26">26</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck27">
+			    <label class="custom-control-label" for="customCheck27">27</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck28">
+			    <label class="custom-control-label" for="customCheck28">28</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck29">
+			    <label class="custom-control-label" for="customCheck29">29</label>
+			</div>
+		    </td>
+		    <td>01.04.2019</td>
+		    <td>Frau</td>
+		    <td>Patrizia</td>
+		    <td>Schmid</td>
+		    <td>patrizia.schmid@ank.at</td>
+		    <td>7210</td>
+		    <td>BG</td>
+		    <td>Mattersburg</td>
+		</tr>
+		<tr>
+		    <td><div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck30">
+			    <label class="custom-control-label" for="customCheck30">30</label>
+			</div>
+		    </td>
+		    <td>03.04.2019</td>
+		    <td>Herr</td>
+		    <td>Alexander</td>
+		    <td>Geiz</td>
+		    <td>alexander.geiz@universitaet.at</td>
+		    <td>1010</td>
+		    <td>ANS</td>
+		    <td>Sacre-Couer</td>
+		</tr>
+	    </tbody>
+	</table>
+	<p class="btns-center mt-5">
+	    <button type="button" class="btn btn-secondary btn-lg">Datensätze zusammenführen</button>
+	    <button type="button" class="btn btn-outline-secondary btn-lg">Datensätze überprüfen</button>
+	    <a href="neuregistrierungen.html" class="btn btn-primary btn-lg">Abbrechen</a>
+	</p>
+    </div>
+</div>
+{% include "layouts/footer.html" %}
+{% endblock %}
