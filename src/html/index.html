@@ -10,114 +10,17 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 {% include "layouts/header.html" %}
 <div class="main-content">
     <div class="container">
-	<div class="reg-heading">
-	    <i class="i-reg"></i>
-	    <h1>Registrierung</h1>
-	</div>
-	<div class="form-wrp">
-	    <form>
-		<div class="form-row">
-		    <div class="form-group col-md-6">
-			<label for="input1">Ich registriere mich in meiner Funktion als <span>*</span></label>
-			<select id="input1" class="custom-select">
-			    <option selected>Mitarbeiter/Mitarbeiterin in einem Unternehmen/Organisation</option>
-			    <option>...</option>
-			</select>
-		    </div>
-		</div>
-		<div class="form-row">
-		    <div class="form-group col-md-2">
-			<label for="input3">Anrede <span>*</span></label>
-			<select id="input3" class="custom-select">
-			    <option selected>Herr (Mr)</option>
-			    <option>Herr (Ms)</option>
-			</select>
-		    </div>
-		    <div class="form-group col-md-2">
-			<label for="input4">Titel</label>
-			<select id="input4" class="custom-select">
-			    <option selected>Anderer</option>
-			    <option>Anderer</option>
-			</select>
-		    </div>
-		    <div class="form-group col-md-3">
-			<label for="input6">Vornamen <span>*</span></label>
-			<input type="text" class="form-control" id="input6" placeholder="Patrizia">
-		    </div>
-		    <div class="form-group col-md-3">
-			<label for="input7">Nachnamen <span>*</span></label>
-			<input type="text" class="form-control" id="input7" placeholder="Schmid">
-		    </div>
-		</div>
-		<div class="form-row">
-		    <div class="form-group col-md-3">
-			<label for="input8">Titel nachgestellt</label>
-			<input type="text" class="form-control" id="input8" >
-		    </div>
-		    <div class="form-group col-md-4">
-			<label for="input10">E-Mail <span>*</span></label>
-			<input type="email" class="form-control" id="input10" placeholder="patrizia.schmid@nmsneubau.org">
-		    </div>
-		    <div class="form-group col-md-3">
-			<label for="input9">Telefon <span>*</span></label>
-			<input type="text" class="form-control" id="input9" placeholder="+431 234 567 891 01">
-		    </div>
-		    <div class="form-group col-md-2">
-			<label for="input5">Funktion</label>
-			<input type="text" class="form-control" id="input5" >
-		    </div>
-		</div>
-		<div class="form-row">
-		    <div class="form-group col-md-6">
-			<label for="input11">Firmenname <span>*</span></label>
-			<input type="text" class="form-control" id="input11" >
-		    </div>
-		</div>
-		<div class="form-row">
-		    <div class="form-group col-md-4">
-			<label for="input12">Straße <span>*</span></label>
-			<input type="text" class="form-control" id="input12" >
-		    </div>
-		    <div class="form-group col-md-2">
-			<label for="input13">Hnr. <span>*</span></label>
-			<input type="text" class="form-control" id="input13" >
-		    </div>
-		    <div class="form-group col-md-2">
-			<label for="input14">Plz. <span>*</span></label>
-			<input type="text" class="form-control" id="input14" >
-		    </div>
-		    <div class="form-group col-md-4">
-			<label for="input15">Ort. <span>*</span></label>
-			<input type="text" class="form-control" id="input15" >
-		    </div>
-		</div>
-		<div class="form-group">
-		    <label for="input16">Mitteilung</label>
-		    <textarea class="form-control" id="input16" rows="4"></textarea>
-		</div>
-		<div class="card mt-4">
-		    <div class="card-body">
-			<h3>Newsletter abonnieren</h3>
-			<div class="custom-control custom-checkbox mb-3">
-			    <input type="checkbox" class="custom-control-input" id="customCheck1">
-			    <label class="custom-control-label" for="customCheck1">Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Abonnieren“ erkläre ich mich damit einverstanden, dass der Verein Zeitung in der Schule mir regelmäßig Informationen zu folgendem Produktsortiment per E-Mail zuschickt: Unterrichtsmaterialien, Seminare und Workshops. Meine Einwilligung kann ich jederzeit gegenüber dem Verein Zeitung in der Schule widerrufen.</label>
-			</div>
-			<h3>Datenschutzbetimmungen*</h3>
-			<div class="custom-control custom-checkbox">
-			    <input type="checkbox" class="custom-control-input" id="customCheck2">
-			    <label class="custom-control-label" for="customCheck2">Ich bestätige, zur Kenntnis genommen zu haben und willige ein, dass der Verein „Zeitung in der Schule“ meine personenbezogenen Daten gemäß den Bestimmungen der Datenschutz-Klausel, die über den Link www.zis/Datenschutzklausel abzurufen ist, verarbeiten darf.</label>
-			</div>
-		    </div>
-		</div>
-		<div class="form-group">
-		    <label><span>*</span> - Pflichtfelder</label>
-		</div>
-		<p class="btns-center">
-		    <a href="/form-2.html" class="btn btn-primary btn-lg">Registrieren</a>
-		    <button type="button" class="btn btn-outline-secondary btn-lg">Abbrechen</button>
-		</p>
-	    </form>
-	</div>
+	<h3>Navigation</h3>
+	<ul class="nav flex-column">
+	    <li><a href="form-1.html">Form 1</a></li>
+	    <li><a href="form-2.html">Form 2</a></li>
+	    <li><a href="form-3.html">Form 3</a></li>
+	    <li><a href="form-4.html">Form 4</a></li>
+	    <li><a href="form-5.html">Form 5</a></li>
+	    <li><a href="form-popups.html">Form Popups</a></li>
+	    <li><a href="neuregistrierungen.html">Neuregistrierungen</a></li>
+	    <li><a href="bestellhistorie.html">Bestellhistorie</a></li>
+	</ul>
     </div>
 </div>
 {% include "layouts/footer.html" %}

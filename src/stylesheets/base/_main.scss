@@ -38,6 +38,9 @@ label{
 	color: $secondary;
     }
 }
+.req{
+    color: $secondary;
+}
 @include media-breakpoint-up(md) {
     .form-row > [class*="col-md"]{
 	.form-inline {
