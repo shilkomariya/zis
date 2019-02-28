@@ -1,0 +1,230 @@
+{#
+Nunjucks Templating!
+Homepage: https://mozilla.github.io/nunjucks/
+Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+{% include "layouts/header.html" %}
+<div class="main-content full-width">
+    <div class="container">
+	<div class="reg-heading">
+	    <i class="i-contakt"></i>
+	    <h1>Contaktinformationen</h1>
+	</div>
+	<div class="form-wrp">
+	    <form>
+		<div class="row">
+		    <div class="col-12 col-xl-6">
+			<h3 class="form-heading i-adresse">Adresse und Kontaktdaten</h3>
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+				<label for="input1">Typ</label>
+				<input type="text" class="form-control" id="input1" placeholder="">
+			    </div>
+			    <div class="form-group col-md-6">
+				<div class="form-inline">
+				    <div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+					<label class="custom-control-label" for="customRadioInline1">Aktiv</label>
+				    </div>
+				    <div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" checked="">
+					<label class="custom-control-label" for="customRadioInline2">Liefersperre</label>
+				    </div>
+				    <div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+					<label class="custom-control-label" for="customRadioInline3">Keine Zusendungen</label>
+				    </div>
+				</div>
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-2">
+				<label for="input2">Anrede</label>
+				<input type="text" class="form-control" id="input2" placeholder="Frau">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input3">Titel</label>
+				<input type="text" class="form-control" id="input3" placeholder="Mag">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input4">Funktion</label>
+				<input type="text" class="form-control" id="input4" placeholder="Schulleiter">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-3">
+				<label for="input5">Vornamen</label>
+				<input type="text" class="form-control" id="input5" placeholder="Esenosarumensemwonken">
+			    </div>
+			    <div class="form-group col-md-5">
+				<label for="input6">Nachnamen</label>
+				<input type="text" class="form-control" id="input6" placeholder="Edler von Brandstätter von Brandenau">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-4">
+				<label for="input7">Straße</label>
+				<input type="text" class="form-control" id="input7" placeholder="Bürgermeister-Armin-Stoltenberg-Straße">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input8">Hnr <span>*</span></label>
+				<input type="text" class="form-control" id="input8" placeholder="39">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input9">Plz <span>*</span></label>
+				<input type="text" class="form-control" id="input9" placeholder="Schmid">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+				<label for="input10">Ort</label>
+				<input type="text" class="form-control" id="input10" placeholder="Llanfairpwllgwyngyllgogerychwyrndrobwllll-antysiliogogogoch">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-3">
+				<label for="input11">Telefon</label>
+				<input type="text" class="form-control" id="input11" placeholder="+43 1 5236258">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input12">Fax</label>
+				<input type="text" class="form-control" id="input12" placeholder="+43 1 5268936">
+			    </div>
+			    <div class="form-group col-md-4">
+				<label for="input13">E-Mail</label>
+				<input type="email" class="form-control" id="input13" placeholder="rg7@907026.ssr-wien.gv.at">
+			    </div>
+			</div>
+			<h3 class="form-heading i-registrierung">Registrierung</h3>
+			<div class="form-row">
+			    <div class="form-group col-md-1">
+				<label>Registrierung</label>
+				<div class="btn-group-toggle" data-toggle="buttons">
+				    <label class="btn btn-block btn-light active">
+					<input type="checkbox" checked> Ja
+				    </label>
+				</div>
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input15">Registrierungdatum</label>
+				<input type="text" class="form-control" id="input15" placeholder="15.03.2019">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input16">Anlagequelle</label>
+				<input type="text" class="form-control" id="input16" placeholder="Online">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input17">Anlagedatum</label>
+				<input type="text" class="form-control" id="input17" placeholder="">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-12">
+				<label for="input18">Anmerkungen</label>
+				<textarea class="form-control" id="input18" rows="4"></textarea>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col-12 col-xl-6">
+			<h3 class="form-heading i-beschaftigung">Beschäftigung bei</h3>
+			<div class="form-row">
+			    <div class="form-group col-md-12">
+				<textarea class="form-control" id="input19" rows="4">
+Bundesgymnasium und Bundesrealgymnasium mit Modellversuch Neue Mittelschule
+Bürgerstraße 15
+8010 Graz
+				</textarea>
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-3">
+				<label for="input20">Telefon</label>
+				<input type="text" class="form-control" id="input21" placeholder="+43 1 5236258">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input22">Fax</label>
+				<input type="text" class="form-control" id="input22" placeholder="+43 1 5268936">
+			    </div>
+			    <div class="form-group col-md-4">
+				<label for="input23">Auftragsreferenz</label>
+				<input type="text" class="form-control" id="input23" placeholder="">
+			    </div>
+			</div>
+			<h3 class="form-heading i-lehrspezifische">Lehrspezifische Informationen</h3>
+			<div class="form-row">
+			    <div class="col-md-6">
+				<div class="form-group">
+				    <label>Schulstufen <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Schulstufen"></i></label>
+				    <div class="btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-light active">
+					    <input type="checkbox" checked> 1 - 4
+					</label>
+					<label class="btn btn-light active">
+					    <input type="checkbox" checked> 5 - 8
+					</label>
+					<label class="btn btn-light">
+					    <input type="checkbox"> 9
+					</label>
+					<label class="btn btn-light">
+					    <input type="checkbox"> 9 - 12
+					</label>
+					<label class="btn btn-light active">
+					    <input type="checkbox" checked> 9 - 13
+					</label>
+				    </div>
+				</div>
+				<div class="form-group" style="max-width: 85px">
+				    <label for="input25">Referent</label>
+				    <select id="input25" class="custom-select">
+					<option selected>Ja</option>
+					<option>...</option>
+				    </select>
+				</div>
+			    </div>
+			    <div class="col-md-6">
+				<div class="form-group">
+				    <label for="input24">Unterrichtende Fächer</label>
+				    <select id="input24" class="custom-select">
+					<option selected>Turnen</option>
+					<option>...</option>
+					<option>...</option>
+					<option>...</option>
+					<option>...</option>
+				    </select>
+				</div>
+				<div class="form-group">
+				    <ul class="languages">
+					<li>Englisch <span class="close-language"></span></li>
+					<li>Deutsch <span class="close-language"></span></li>
+					<li>Latein <span class="close-language"></span></li>
+				    </ul>
+				</div>
+			    </div>
+			</div>
+			<h3 class="form-heading i-verteiler">Verteiler</h3>
+			<div class="form-group">
+			    <textarea class="form-control" id="input26" rows="4">
+-Weihnachtskaret
+-Weihnachtsfeier
+- ZiS GV 2017
+			    </textarea>
+			</div>
+		    </div>
+		    <div class="col-12">
+			<p class="btns-center mt-5">
+			    <button type="button" class="btn btn-secondary btn-lg">OK</button>
+			    <button type="button" class="btn btn-outline-secondary btn-lg">Abbrechen</button>
+			    <a href="/form-5.html" class="btn btn-primary btn-lg">Übernehmen</a>
+			</p>
+		    </div>
+		</div>
+	    </form>
+	</div>
+    </div>
+</div>
+{% include "layouts/footer.html" %}
+{% endblock %}

@@ -1,0 +1,163 @@
+{#
+Nunjucks Templating!
+Homepage: https://mozilla.github.io/nunjucks/
+Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+{% include "layouts/header.html" %}
+<div class="main-content">
+    <div class="container">
+	<div class="reg-heading">
+	    <i class="i-reg"></i>
+	    <h1>Registrierung</h1>
+	</div>
+	<div class="form-wrp">
+	    <form>
+		<div class="form-row">
+		    <div class="form-group col-md-6">
+			<label for="input1">Ich registriere mich in meiner Funktion als <span>*</span></label>
+			<select id="input1" class="custom-select">
+			    <option selected>Lehrer/Lehrerin/Pädagogisches Personal</option>
+			    <option>Privatperson</option>
+			    <option>Mitarbeiter/Mitarbeiterin in einem Unternehmen/Organisation</option>
+			    <option>...</option>
+			</select>
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-3">
+			<label for="input16">Schultyp <span>*</span></label>
+			<select id="input16" class="custom-select">
+			    <option selected>BMHS</option>
+			    <option>...</option>
+			</select>
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input17">Plz. meiner Schule <span>*</span></label>
+			<input type="text" class="form-control" id="input17" placeholder="1070">
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-12">
+			<label for="input18">Name und Anschrift meiner Schule <span>*</span></label>
+			<select id="input18" class="custom-select">
+			    <option selected>Neue Mittelschule, 1070 Wien, Neubaugasse 42</option>
+			    <option>Privatperson</option>
+			    <option>...</option>
+			</select>
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-2">
+			<label for="input3">Anrede <span>*</span></label>
+			<select id="input3" class="custom-select">
+			    <option selected>Herr (Mr)</option>
+			    <option>Herr (Ms)</option>
+			</select>
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-2">
+			<label for="input4">Titel</label>
+			<input type="text" class="form-control" id="input4" placeholder="">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input5">Vornamen <span>*</span></label>
+			<input type="text" class="form-control" id="input5" placeholder="Patrizia">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input6">Nachnamen <span>*</span></label>
+			<input type="text" class="form-control" id="input6" placeholder="Schmid">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input7">Titel nachgestellt</label>
+			<input type="text" class="form-control" id="input7" placeholder="">
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-2">
+			<label for="input8">Position</label>
+			<input type="text" class="form-control" id="input8" placeholder="Schulleiter / in">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input9">Telefon</label>
+			<input type="text" class="form-control" id="input9" placeholder="+431 234 567 891 01">
+		    </div>
+		    <div class="form-group col-md-4">
+			<label for="input10">E-Mail <span>*</span></label>
+			<input type="email" class="form-control" id="input10" placeholder="patrizia.schmid@nmsneubau.org">
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-6">
+			<label>Bitte wählen Sie die Schulstufe(n) aus <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Bitte wählen Sie die Schulstufe(n) aus"></i></label>
+			<div class="btn-group-toggle" data-toggle="buttons">
+			    <label class="btn btn-light active">
+				<input type="checkbox" checked> 1 - 4
+			    </label>
+			    <label class="btn btn-light active">
+				<input type="checkbox" checked> 5 - 8
+			    </label>
+			    <label class="btn btn-light">
+				<input type="checkbox"> 9
+			    </label>
+			    <label class="btn btn-light">
+				<input type="checkbox"> 9 - 12
+			    </label>
+			    <label class="btn btn-light active">
+				<input type="checkbox" checked> 9 - 13
+			    </label>
+			</div>
+		    </div>
+		    <div class="form-group col-md-6">
+			<label>Unterrichtsfächer <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Unterrichtsfächer"></i></label>
+			<div class="form-row">
+			    <div class="form-group col-sm-6">
+				<input type="text" class="form-control" id="input11" placeholder="">
+			    </div>
+			    <div class="form-group col-sm-6">
+				<input type="text" class="form-control" id="input12" placeholder="">
+			    </div>
+			    <div class="form-group col-sm-6">
+				<input type="text" class="form-control" id="input13" placeholder="">
+			    </div>
+			    <div class="form-group col-sm-6">
+				<input type="text" class="form-control" id="input14" placeholder="">
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <label for="input16">Mitteilung</label>
+		    <textarea class="form-control" id="input15" rows="4"></textarea>
+		</div>
+		<div class="card mt-4">
+		    <div class="card-body">
+			<h3>Newsletter abonnieren</h3>
+			<div class="custom-control custom-checkbox mb-3">
+			    <input type="checkbox" class="custom-control-input" id="customCheck1">
+			    <label class="custom-control-label" for="customCheck1">Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Abonnieren“ erkläre ich mich damit einverstanden, dass der Verein Zeitung in der Schule mir regelmäßig Informationen zu folgendem Produktsortiment per E-Mail zuschickt: Unterrichtsmaterialien, Seminare und Workshops. Meine Einwilligung kann ich jederzeit gegenüber dem Verein Zeitung in der Schule widerrufen.</label>
+			</div>
+			<h3>Datenschutzbetimmungen*</h3>
+			<div class="custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="customCheck2">
+			    <label class="custom-control-label" for="customCheck2">Ich bestätige, zur Kenntnis genommen zu haben und willige ein, dass der Verein „Zeitung in der Schule“ meine personenbezogenen Daten gemäß den Bestimmungen der Datenschutz-Klausel, die über den Link www.zis/Datenschutzklausel abzurufen ist, verarbeiten darf.</label>
+			</div>
+		    </div>
+		</div>
+		<div class="form-group">
+		    <label><span>*</span> - Pflichtfelder</label>
+		</div>
+		<p class="btns-center">
+		    <a href="/form-popups.html" class="btn btn-primary btn-lg">Registrieren</a>
+		    <button type="button" class="btn btn-outline-secondary btn-lg">Abbrechen</button>
+		</p>
+	    </form>
+	</div>
+    </div>
+</div>
+{% include "layouts/footer.html" %}
+{% endblock %}

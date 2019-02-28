@@ -1,0 +1,86 @@
+{#
+Nunjucks Templating!
+Homepage: https://mozilla.github.io/nunjucks/
+Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+{% include "layouts/header.html" %}
+<div class="main-content">
+    <div class="container">
+	<div class="reg-heading">
+	    <i class="i-reg"></i>
+	    <h1>Registrierung</h1>
+	</div>
+	<div class="form-wrp">
+	    <div class="card mt-4">
+		<div class="card-body">
+		    <div class="row">
+			<div class="col-md-4 text-center mb-2">
+			    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#primaryModal">Primary Popup</button>
+			    <div class="modal modal-primary fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="primaryModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+					<div class="modal-header icon-achtung">
+					    <h5 class="modal-title">Achtung!</h5>
+					</div>
+					<div class="modal-body">
+					    <p>Vielen Dank fur Ihre Registrierung , wir haben Ihnen<br>
+						soeben eine E-mail  zur Verifizierung ubermilttent!</p>
+					    <p>
+						<button type="button" class="btn btn-sm btn-primary" data-dismiss="modal" aria-label="Close">OK</button></p>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+			<div class="col-md-4 text-center mb-2">
+			    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#secondaryModal">Secondary Popup</button>
+			    <div class="modal modal-secondary fade" id="secondaryModal" tabindex="-1" role="dialog" aria-labelledby="secondaryModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+					<div class="modal-header icon-achtung">
+					    <h5 class="modal-title">Achtung!</h5>
+					</div>
+					<div class="modal-body">
+					    <p>Bitte fullen Sie alle Pflichtfelder aus!<br>
+						Pflichtfelder sind mit einem <span class="req">*</span> gekenezechnet.</p>
+					    <p>
+						<button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal" aria-label="Close">Zurück</button></p>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+			<div class="col-md-4 text-center mb-2">
+			    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#darkModal">Dark Popup</button>
+			    <div class="modal modal-dark fade" id="darkModal" tabindex="-1" role="dialog" aria-labelledby="darkModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+					<div class="modal-header icon-achtung">
+					    <h5 class="modal-title">Hinweis!</h5>
+					</div>
+					<div class="modal-body">
+					    <p>Bitte fullen Sie alle Pflichtfelder aus!<br>
+						Pflichtfelder sind mit einem <span class="req">*</span> gekenezechnet.</p>
+					    <p>
+						<button type="button" class="btn btn-sm btn-dark" data-dismiss="modal" aria-label="Close">Zurück</button></p>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<p class="btns-center">
+	    <a href="/form-4.html" class="btn btn-primary btn-lg">Next</a>
+	</p>
+    </div>
+</div>
+{% include "layouts/footer.html" %}
+{% endblock %}
