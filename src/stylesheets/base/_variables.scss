@@ -33,6 +33,8 @@ $dark:          $blue;
 // Body
 $body-color:  #747474;
 // Links
+$link-color: $light-blue;
+$link-hover-decoration: none;
 // Paragraphs
 // Grid breakpoints
 
@@ -141,3 +143,17 @@ $modal-md: 455px;
 // Carousel
 // Close
 // Code
+
+
+//Datepicker
+$gray: $gray-100;
+$border-radius-base: 0;
+$dropdown-border: 0;
+$gray-lighter: $gray-100;
+$gray-light: $gray-100;
+$state-info-bg: #546465;
+
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $primary;
+$btn-primary-border: $primary;

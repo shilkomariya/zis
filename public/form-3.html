@@ -194,7 +194,7 @@
 			    <input type="checkbox" class="custom-control-input" id="customCheck1">
 			    <label class="custom-control-label" for="customCheck1">Durch Angabe meiner E-Mail-Adresse und Anklicken des Buttons „Abonnieren“ erkläre ich mich damit einverstanden, dass der Verein Zeitung in der Schule mir regelmäßig Informationen zu folgendem Produktsortiment per E-Mail zuschickt: Unterrichtsmaterialien, Seminare und Workshops. Meine Einwilligung kann ich jederzeit gegenüber dem Verein Zeitung in der Schule widerrufen.</label>
 			</div>
-			<h3>Datenschutzbetimmungen*</h3>
+			<h3>Datenschutzbestimmungen*</h3>
 			<div class="custom-control custom-checkbox">
 			    <input type="checkbox" class="custom-control-input" id="customCheck2">
 			    <label class="custom-control-label" for="customCheck2">Ich bestätige, zur Kenntnis genommen zu haben und willige ein, dass der Verein „Zeitung in der Schule“ meine personenbezogenen Daten gemäß den Bestimmungen der Datenschutz-Klausel, die über den Link www.zis/Datenschutzklausel abzurufen ist, verarbeiten darf.</label>
@@ -262,8 +262,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
-
+	<script type="text/javascript" src="/javascripts/bootstrap-datepicker.js"></script>
 	<script>
+
 	    $(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 	    });
@@ -282,6 +283,37 @@
 		'bInfo': false
 	    });
 
+	    $('#ersten-datepicker').datepicker({
+		language: "de",
+		daysOfWeekDisabled: "0",
+		weekStart: 1
+	    });
+	    $('#letzten-datepicker').datepicker({
+		language: "de",
+		daysOfWeekDisabled: "0",
+		weekStart: 1
+	    });
+//*SAMESIZR
+//https://github.com/StephenWidom/samesizr
+//*/
+	    !function (t) {
+		t.fn.samesizr = function (i) {
+		    var e = t.extend({mobile: 767}, i), n = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		    if (this.css("height", "auto"), n > e.mobile) {
+			var h = 0;
+			this.each(function () {
+			    h = Math.max(h, t(this).outerHeight())
+			}).css("height", h)
+		    }
+		    return this
+		}
+	    }(jQuery);
+
+	    $(window).on("load resize", function () {
+		$('.auswahlen .content').samesizr({
+		    mobile: 767
+		});
+	    });
 	</script>
 	
     </body>
