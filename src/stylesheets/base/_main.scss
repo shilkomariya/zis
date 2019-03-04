@@ -849,6 +849,32 @@ table.table{
 	    }
 	}
     }
+    @include media-breakpoint-down(sm) {
+	margin: 2rem auto;
+	width: 403px;
+	height: 245px;
+	background: url(../images/ticket-sm.png) center center no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	.right,
+	.left{
+	    padding: 30px;
+	    max-width: 100%;
+	    p{
+		width: 100%;
+	    }
+	}
+    }
+    @media(max-width:478px){
+	width: 345px;
+	height: 210px;
+    }
+    @media(max-width:374px){
+	width: 290px;
+	height: 176px;
+    }
 }
 /*Footer*/
 .site-footer{
