@@ -76,6 +76,7 @@ $btn-font-family: $font-family-secondary;
 $btn-font-weight: 700;
 $btn-border-width: 2px;
 $btn-padding-x: 1rem;
+$btn-padding-y: rem(5px);
 
 $btn-font-size-sm: rem(18px);
 $btn-padding-y-sm: 2px;
@@ -85,6 +86,7 @@ $input-border-radius: 0;
 $custom-select-border-radius: $input-border-radius;
 $input-border-color: #d9dde9;
 $input-bg: #f4f8fa;
+$input-disabled-bg: $input-bg;
 
 $input-color: #747474;
 $input-placeholder-color: $input-color;
@@ -96,6 +98,9 @@ $custom-select-bg-size: 15px 20px ; // In pixels because image dimensions
 
 $custom-select-indicator: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 24 24' id='Layer_1' version='1.0' viewBox='0 0 24 24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolyline fill='none' points='21,8.5 12,17.5 3,8.5 ' stroke='%23757989' stroke-miterlimit='10' stroke-width='2'/%3E%3C/svg%3E");
 
+
+$custom-select-disabled-color: $input-color;
+$custom-select-disabled-bg: $input-bg;
 
 $custom-control-indicator-bg: #fff;
 $custom-control-indicator-border-color: $blue;

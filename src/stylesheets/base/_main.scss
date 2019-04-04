@@ -38,6 +38,13 @@ svg path {
 .form-group.sm{
     max-width: rem(450px);
 }
+.custom-select,
+.form-control{
+    &:disabled,
+	&[readonly] {
+	opacity: .5;
+    }
+}
 .form-text a{
     color: #757989;
     text-decoration: underline;
@@ -59,6 +66,10 @@ label{
 	height: .9em;
 	vertical-align: -.125em;
     }
+}
+.label-disabled,
+.label-readonly{
+    opacity: .5;
 }
 .req{
     color: $secondary;
