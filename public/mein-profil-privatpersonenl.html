@@ -63,26 +63,77 @@
 
 <div class="main-content">
     <div class="container">
-	<h3>Navigation</h3>
-	<ul class="nav flex-column">
-	    <li><a href="form-1.html">Form 1</a></li>
-	    <li><a href="form-2.html">Form 2</a></li>
-	    <li><a href="form-3.html">Form 3</a></li>
-	    <li><a href="form-4.html">Form 4</a></li>
-	    <li><a href="form-5.html">Form 5</a></li>
-	    <li><a href="form-popups.html">Form Popups</a></li>
-	    <li><a href="neuregistrierungen.html">Neuregistrierungen</a></li>
-	    <li><a href="bestellhistorie.html">Bestellhistorie</a></li>
-	    <li><a href="webshop.html">WEBshop</a></li>
-	    <li><a href="webshop-2.html">WEBshop 2</a></li>
-	</ul>
-	<h3 class="my-3">04.04.2019 ---------------</h3>
-	<ul class="nav flex-column">
-	    <li><a href="login.html">Login</a></li>
-	    <li><a href="kennwort-zurücksetzen.html">Kennwort zurücksetzen</a></li>
-	    <li><a href="mein-profil-unternehmen.html">Mein Profil Unternehmen</a></li>
-	    <li><a href="mein-profil-privatpersonenl.html">Mein Profil Privatpersonenl</a></li>
-	</ul>
+	<div class="reg-heading">
+	    <i class="i-reg"></i>
+	    <h1>Mein Profil</h1>
+	</div>
+	<div class="form-wrp">
+	    <form>
+		<div class="form-row">
+		    <div class="form-group col-md-2">
+			<label for="input3">Anrede <span>*</span></label>
+			<select id="input3" class="custom-select">
+			    <option selected>Herr (Mr)</option>
+			    <option>Herr (Ms)</option>
+			</select>
+		    </div>
+		    <div class="form-group col-md-2">
+			<label for="input4">Titel</label>
+			<select id="input4" class="custom-select">
+			    <option selected>Anderer</option>
+			    <option>Anderer</option>
+			</select>
+		    </div>
+		    <div class="form-group col-md-2">
+			<label for="input5">Vorname <span>*</span></label>
+			<input type="text" class="form-control" id="input5" placeholder="Patrizia">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input6">Nachname <span>*</span></label>
+			<input type="text" class="form-control" id="input6" placeholder="Schmid">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input7">Titel nachgestellt</label>
+			<input type="text" class="form-control" id="input7" placeholder="">
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-4">
+			<label for="input10">E-Mail <span>*</span></label>
+			<input type="email" class="form-control" id="input10" placeholder="patrizia.schmid@nmsneubau.org">
+		    </div>
+		    <div class="form-group col-md-3">
+			<label for="input9">Telefon</label>
+			<input type="text" class="form-control" id="input9" placeholder="+431 234 567 891 01">
+		    </div>
+		</div>
+		<div class="form-row">
+		    <div class="form-group col-md-4">
+			<label for="input12">Straße <span>*</span></label>
+			<input type="text" class="form-control" id="input12" >
+		    </div>
+		    <div class="form-group col-md-2">
+			<label for="input13">Hnr. <span>*</span></label>
+			<input type="text" class="form-control" id="input13" >
+		    </div>
+		    <div class="form-group col-md-2">
+			<label for="input14">Plz. <span>*</span></label>
+			<input type="text" class="form-control" id="input14" >
+		    </div>
+		    <div class="form-group col-md-4">
+			<label for="input15">Ort. <span>*</span></label>
+			<input type="text" class="form-control" id="input15" >
+		    </div>
+		</div>
+		<div class="form-group">
+		    <label><span>*</span> - Pflichtfelder</label>
+		</div>
+		<p class="btns-center">
+		    <button type="button" class="btn btn-outline-secondary btn-lg">Profil bearbeiten</button>
+		    <a href="#" class="btn btn-primary btn-lg">Änderungen speichern</a>
+		</p>
+	    </form>
+	</div>
     </div>
 </div>
 <div class="site-footer">
