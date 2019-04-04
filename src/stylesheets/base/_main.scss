@@ -29,13 +29,35 @@ html{
     max-width: 100%;
 }
 */
+
+svg path {
+    fill:inherit;
+    stroke:inherit;
+}
 /*Forms*/
+.form-group.sm{
+    max-width: rem(450px);
+}
+.form-text a{
+    color: #757989;
+    text-decoration: underline;
+}
 label{
     font-size: 14px;
     font-weight: 300;
     color: #757989;
     span{
 	color: $secondary;
+    }
+}
+.label-bold{
+    color: $blue;
+    font-weight: 700;
+    font-size: rem(24px);
+    .icon {
+	width: .9em;
+	height: .9em;
+	vertical-align: -.125em;
     }
 }
 .req{
@@ -293,6 +315,14 @@ ul.languages{
     .i-bestellhistorie{
 	background-image: url("data:image/svg+xml,%3Csvg height='24px' version='1.1' viewBox='0 0 24 24' width='24px' xmlns='http://www.w3.org/2000/svg' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle/%3E%3Cdesc/%3E%3Cdefs/%3E%3Cg fill='none' fill-rule='evenodd' id='miu' stroke='none' stroke-width='1'%3E%3Cg id='Artboard-1' transform='translate(-359.000000, -119.000000)'%3E%3Cg id='slice' transform='translate(215.000000, 119.000000)'/%3E%3Cpath d='M361.181376,129 C362.121889,123.879764 366.60786,120 372,120 C378.075133,120 383,124.924867 383,131 C383,137.075133 378.075133,142 372,142 C367.727268,142 364.023517,139.563904 362.201917,136.004883 L363.340648,136.004883 C365.070389,138.991197 368.300604,141 372,141 C377.522848,141 382,136.522848 382,131 C382,125.477152 377.522848,121 372,121 C367.162084,121 363.126577,124.435519 362.200036,129 L361.181376,129 Z M371.5,131.349626 L376.710685,134.421329 L377.218515,133.559872 L372.5,130.754395 L372.5,124.031738 L371.5,124.031738 L371.5,131.349626 Z M361.5,132 L364,129 L359,129 L361.5,132 Z' fill='%23FFFFFF' id='circle-backup-time-history-recent-time-machine-outline-stroke'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	background-size: rem(32px);
+    }
+    .i-login{
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='32' width='32' style=''%3E%3Crect id='backgroundrect' width='100%25' height='100%25' x='0' y='0' fill='none' stroke='none'/%3E%3Ctitle/%3E%3Cg class='currentLayer' style=''%3E%3Ctitle%3ELayer 1%3C/title%3E%3Cg data-name='1' id='_1' class='selected' fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M27,3V29a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V27H7v1H25V4H7V7H5V3A1,1,0,0,1,6,2H26A1,1,0,0,1,27,3ZM12.29,20.29l1.42,1.42,5-5a1,1,0,0,0,0-1.42l-5-5-1.42,1.42L15.59,15H5v2H15.59Z' id='svg_1' fill='%23ffffff' fill-opacity='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	background-size: rem(33px);
+    }
+    .i-restore{
+	background-image: url(../images/i-restore.png);
+	background-size: rem(33);
     }
     h1{
 	margin: 0;
