@@ -1,0 +1,163 @@
+{#
+Nunjucks Templating!
+Homepage: https://mozilla.github.io/nunjucks/
+Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+{% include "layouts/header.html" %}
+<div class="main-content full-width">
+    <div class="container">
+	<div class="reg-heading">
+	    <i class="i-contakt"></i>
+	    <h1>Kontaktinformationen Unternehmen</h1>
+	</div>
+	<div class="form-wrp">
+	    <form>
+		<div class="row">
+		    <div class="col-12 col-xl-6">
+			<div class="row">
+			    <div class="col-md-8">
+				<h3 class="form-heading i-adresse">Adresse und Kontaktdaten</h3>
+			    </div>
+			    <div class="col-md-4 text-right-md">
+				<button type="button" class="btn btn-secondary">Bestellhistorie</button>
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-2">
+				<label for="input2">Anrede</label>
+				<input type="text" class="form-control" id="input2" placeholder="Frau">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input3">Titel</label>
+				<input type="text" class="form-control" id="input3" placeholder="Mag">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-3">
+				<label for="input5">Vorname</label>
+				<input type="text" class="form-control" id="input5" placeholder="Esenosarumensemwonken">
+			    </div>
+			    <div class="form-group col-md-4">
+				<label for="input6">Nachname</label>
+				<input type="text" class="form-control" id="input6" placeholder="Edler von Brandstätter von Brandenau">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input6">Titel nachgestellt </label>
+				<input type="text" class="form-control" id="input6" placeholder="">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-4">
+				<label for="input13">E-Mail</label>
+				<input type="email" class="form-control" id="input13" placeholder="rg7@907026.ssr-wien.gv.at">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input11">Telefon</label>
+				<input type="text" class="form-control" id="input11" placeholder="+43 1 5236258">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input12">Fax</label>
+				<input type="text" class="form-control" id="input12" placeholder="+43 1 5268936">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-4">
+				<label for="input7">Straße</label>
+				<input type="text" class="form-control" id="input7" placeholder="Bürgermeister-Armin-Stoltenberg-Straße">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input8">Hnr</label>
+				<input type="text" class="form-control" id="input8" placeholder="39">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input9">Plz</label>
+				<input type="text" class="form-control" id="input9" placeholder="1070">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-6">
+				<label for="input10">Ort</label>
+				<input type="text" class="form-control" id="input10" placeholder="Llanfairpwllgwyngyllgogerychwyrndrobwllll-antysiliogogogoch">
+			    </div>
+			</div>
+			<h3 class="form-heading i-registrierung">Registrierung</h3>
+			<div class="form-row">
+			    <div class="form-group col-md-2">
+				<label>Registrierung</label>
+				<div class="btn-group-toggle" data-toggle="buttons">
+				    <label class="btn btn-block btn-light active">
+					<input type="checkbox" checked> Ja
+				    </label>
+				</div>
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input15">Registrierungdatum</label>
+				<input type="text" class="form-control" id="input15" placeholder="15.03.2019">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input16">Anlagequelle</label>
+				<input type="text" class="form-control" id="input16" placeholder="Online">
+			    </div>
+			    <div class="form-group col-md-2">
+				<label for="input17">Anlagedatum</label>
+				<input type="text" class="form-control" id="input17" placeholder="">
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-12">
+				<label for="input18">Anmerkungen</label>
+				<textarea class="form-control" id="input18" rows="4"></textarea>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col-12 col-xl-6">
+			<h3 class="form-heading i-beschaftigung">Beschäftigung bei</h3>
+			<div class="form-row">
+			    <div class="form-group col-md-12">
+				<textarea class="form-control" id="input19" rows="4">
+Bundesgymnasium und Bundesrealgymnasium mit Modellversuch Neue Mittelschule
+Bürgerstraße 15
+8010 Graz
+				</textarea>
+			    </div>
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-md-3">
+				<label for="input20">Telefon</label>
+				<input type="text" class="form-control" id="input21" placeholder="+43 1 5236258">
+			    </div>
+			    <div class="form-group col-md-3">
+				<label for="input22">Fax</label>
+				<input type="text" class="form-control" id="input22" placeholder="+43 1 5268936">
+			    </div>
+			    <div class="form-group col-md-4">
+				<label for="input23">Auftragsreferenz</label>
+				<input type="text" class="form-control" id="input23" placeholder="">
+			    </div>
+			</div>
+			<h3 class="form-heading i-verteiler">Verteiler</h3>
+			<div class="form-group">
+			    <textarea class="form-control" id="input26" rows="4">
+-Weihnachtskaret
+-Weihnachtsfeier
+- ZiS GV 2017
+			    </textarea>
+			</div>
+		    </div>
+		    <div class="col-12">
+			<p class="btns-center mt-5">
+			    <button type="button" class="btn btn-outline-secondary btn-lg">Profil bearbeiten</button>
+			    <a href="#" class="btn btn-primary btn-lg">Änderungen speichern</a>
+			</p>
+		    </div>
+		</div>
+	    </form>
+	</div>
+    </div>
+</div>
+{% include "layouts/footer.html" %}
+{% endblock %}
