@@ -62,7 +62,10 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 		<div class="form-row">
 		    <div class="form-group col-md-2">
 			<label for="input4">Titel</label>
-			<input type="text" class="form-control" id="input4" placeholder="">
+			<select id="input4" class="custom-select">
+			    <option selected>Anderer</option>
+			    <option>Anderer</option>
+			</select>
 		    </div>
 		    <div class="form-group col-md-3">
 			<label for="input5">Vorname <span>*</span></label>
@@ -113,20 +116,22 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 			</div>
 		    </div>
 		    <div class="form-group col-md-6">
-			<label>Unterrichtsfächer <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Unterrichtsfächer"></i></label>
-			<div class="form-row">
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input11" placeholder="">
-			    </div>
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input12" placeholder="">
-			    </div>
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input13" placeholder="">
-			    </div>
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input14" placeholder="">
-			    </div>
+			<div class="form-group">
+			    <label>Unterrichtsfächer <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Unterrichtsfächer"></i></label>
+			    <select id="input24" class="custom-select">
+				<option selected>Turnen</option>
+				<option>...</option>
+				<option>...</option>
+				<option>...</option>
+				<option>...</option>
+			    </select>
+			</div>
+			<div class="form-group">
+			    <ul class="languages">
+				<li>Englisch <span class="close-language"></span></li>
+				<li>Deutsch <span class="close-language"></span></li>
+				<li>Latein <span class="close-language"></span></li>
+			    </ul>
 			</div>
 		    </div>
 		</div>

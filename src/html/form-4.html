@@ -28,12 +28,18 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 			</div>
 			<div class="form-row">
 			    <div class="form-group col-md-2">
-				<label for="input2">Anrede</label>
-				<input type="text" class="form-control" id="input2" placeholder="Frau">
+				<label for="input2">Anrede <span>*</span></label>
+				<select id="input2" class="custom-select">
+				    <option selected>Herr</option>
+				    <option>Herr (Ms)</option>
+				</select>
 			    </div>
 			    <div class="form-group col-md-2">
 				<label for="input3">Titel</label>
-				<input type="text" class="form-control" id="input3" placeholder="Mag">
+				<select id="input3" class="custom-select">
+				    <option selected>Anderer</option>
+				    <option>Anderer</option>
+				</select>
 			    </div>
 			</div>
 			<div class="form-row">

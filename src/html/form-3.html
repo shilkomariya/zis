@@ -17,17 +17,6 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 	<div class="form-wrp">
 	    <form>
 		<div class="form-row">
-		    <div class="form-group col-md-6">
-			<label for="input1">Ich registriere mich in meiner Funktion als <span>*</span></label>
-			<select id="input1" class="custom-select">
-			    <option selected>Lehrer/Lehrerin/Pädagogisches Personal</option>
-			    <option>Privatperson</option>
-			    <option>Mitarbeiter/Mitarbeiterin in einem Unternehmen/Organisation</option>
-			    <option>...</option>
-			</select>
-		    </div>
-		</div>
-		<div class="form-row">
 		    <div class="form-group col-md-3">
 			<label for="input16">Schultyp <span>*</span></label>
 			<select id="input16" class="custom-select">
@@ -42,7 +31,7 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 		</div>
 		<div class="form-row">
 		    <div class="form-group col-md-12">
-			<label for="input18">Name und Anschrift meiner Schule <span>*</span></label>
+			<label for="input18">Name und Anschrift meiner Schule <span>*</span> <a href="mailto:admin@zis.com">(send a request to add a school if you can't find yours)</a></label>
 			<select id="input18" class="custom-select">
 			    <option selected>Neue Mittelschule, 1070 Wien, Neubaugasse 42</option>
 			    <option>Privatperson</option>
@@ -62,7 +51,10 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 		<div class="form-row">
 		    <div class="form-group col-md-2">
 			<label for="input4">Titel</label>
-			<input type="text" class="form-control" id="input4" placeholder="">
+			<select id="input4" class="custom-select">
+			    <option selected>Anderer</option>
+			    <option>Anderer</option>
+			</select>
 		    </div>
 		    <div class="form-group col-md-3">
 			<label for="input5">Vorname <span>*</span></label>
@@ -74,7 +66,10 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 		    </div>
 		    <div class="form-group col-md-3">
 			<label for="input7">Titel nachgestellt</label>
-			<input type="text" class="form-control" id="input7" placeholder="">
+			<select id="input7" class="custom-select">
+			    <option selected>Anderer</option>
+			    <option>Anderer</option>
+			</select>
 		    </div>
 		</div>
 		<div class="form-row">
@@ -123,20 +118,22 @@ Docs: https://mozilla.github.io/nunjucks/api.html
 			</div>
 		    </div>
 		    <div class="form-group col-md-6">
-			<label>Unterrichtsfächer <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Unterrichtsfächer"></i></label>
-			<div class="form-row">
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input11" placeholder="">
-			    </div>
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input12" placeholder="">
-			    </div>
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input13" placeholder="">
-			    </div>
-			    <div class="form-group col-sm-6">
-				<input type="text" class="form-control" id="input14" placeholder="">
-			    </div>
+			<div class="form-group">
+			    <label>Unterrichtsfächer <i class="icon-tooltip" data-toggle="tooltip" data-html="true" title="Tooltip for Unterrichtsfächer"></i></label>
+			    <select id="input24" class="custom-select">
+				<option selected>Turnen</option>
+				<option>...</option>
+				<option>...</option>
+				<option>...</option>
+				<option>...</option>
+			    </select>
+			</div>
+			<div class="form-group">
+			    <ul class="languages">
+				<li>Englisch <span class="close-language"></span></li>
+				<li>Deutsch <span class="close-language"></span></li>
+				<li>Latein <span class="close-language"></span></li>
+			    </ul>
 			</div>
 		    </div>
 		</div>
